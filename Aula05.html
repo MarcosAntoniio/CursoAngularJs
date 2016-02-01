@@ -1,4 +1,3 @@
-
 <html ng-app>
 <head>
     <meta charset="utf-8">
@@ -8,5 +7,25 @@
     <title>Exemplo01</title>    
     </head>
     <body>
+    
+        <input type="text" ng-model="minhavariavel">
+        
+          <input type="text" ng-model="minhaIdade">      
+        
+  
+      <div> 
+          Usando a extensão - ng-bind
+                  <h1 ng-bind="minhavariavel">  </h1>
+          
+          Usando o {{"nomedavariavel"}}
+          
+          {{minhavariavel}}    
+          
+          
+          a minha idade é {{minhaIdade}}
+        
+        </div>
+
     </body>
-    </html>
+
+</html>
