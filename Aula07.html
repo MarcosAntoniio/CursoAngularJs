@@ -1,0 +1,36 @@
+<html ng-app="appGeneric">
+<head>
+<title> Controllers </title>
+<meta charset="UTF-8"/>
+<script src="js/angular/angular.min.js">
+</script>
+<script src="js/app.module.js">
+    </script>
+<script src="js/Aula07Controller.js">
+</script>
+</head>
+<body>
+    
+  
+    <div ng-controller="Aula07Controller">      
+        
+        <h4>Minha Lista de Pessoas con ng-repeat</h4>
+        
+        <ul>
+        
+            <li ng-repeat="pessoa in pessoas" style="color:#191970" >
+                {{pessoa.nomeCompleto}}
+            
+            </li>
+        
+        </ul>
+        
+        
+        <h2> Adicionando novas pessoas</h2>
+    
+        <input type="text" id = "nomepessoa" placeholder="Nome">
+        <input type="text" id = "idadepessoa" placeholder="Idade">
+        <button ng-click="adicionarPessoa()">Adicionar</button>
+    </div>
+</body>
+</html>

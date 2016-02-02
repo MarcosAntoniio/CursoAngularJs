@@ -1,3 +1,3 @@
-var appSaudacao =angular.module('appSaudacao',[]);
+var app =angular.module('app',[]);
 
 
