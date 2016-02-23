@@ -1,0 +1,32 @@
+<html ng-app="appGeneric">
+<head>
+<title> Controllers </title>
+<meta charset="UTF-8"/>
+<script src="js/angular/angular.min.js">
+</script>
+<script src="js/app.module.js">
+    </script>
+    
+    <script src="js/Aula14Controller.js">
+    </script>   
+   
+</head>
+<body>    
+  
+<div ng-controller="Aula14Controller">
+
+<p>Listagem</p>
+<p ng-repeat="dado in dados">
+{{dado.nome}} -- {{dado.idade}}
+</p>
+
+<button type="button" ng-click="carregaDados()">
+	Carregar Dados
+</button>
+
+</div>
+    
+    
+    
+</body>
+</html>
